@@ -2,8 +2,7 @@ const CACHE_NAME = 'writeup-v1';
 const ASSETS = [
   'Write%20up_20260127.htm',
   'manifest.json',
-  'icon-192.png',
-  'icon-512.png'
+  'icon-192.png'
 ];
 
 self.addEventListener('install', (event) => {
@@ -14,8 +13,6 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
+    caches.match(event.request).then((response) => response || fetch(event.request))
   );
 });
