@@ -2,7 +2,7 @@
   "name": "Legislative Write-up Tool",
   "short_name": "WriteUp",
   "description": "A tool for generating legislative and committee write-ups.",
-  "start_url": "Write%20up_20260127.htm",
+  "start_url": "EWriteup.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
