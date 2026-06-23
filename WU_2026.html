@@ -6,14 +6,14 @@
     <link rel="manifest" href="manifestwu.json">
     <meta name="theme-color" content="#007bff">
 
-    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="apple-touch-icon" href="iconwu1.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('sw.js')
+          navigator.serviceWorker.register('swwu.js')
             .then(() => console.log('PWA: Ready to work offline.'))
             .catch(err => console.log('PWA: Service Worker error', err));
         });
