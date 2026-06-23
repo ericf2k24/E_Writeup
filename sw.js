@@ -1,6 +1,6 @@
 const CACHE_NAME = 'writeup-v1';
 const ASSETS = [
-  'Write%20up_20260127.htm',
+  'WU_2026.html',
   'manifest.json',
   'icon-192.png'
 ];
