@@ -1,8 +1,8 @@
-const CACHE_NAME = 'writeup-v1';
+const CACHE_NAME = 'EWriteup';
 const ASSETS = [
   'WU_2026.html',
-  'manifest.json',
-  'icon-192.png'
+  'manifestwu.json',
+  'iconwu1.png'
 ];
 
 self.addEventListener('install', (event) => {
