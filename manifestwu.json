@@ -1,6 +1,6 @@
 {
   "name": "Write-up",
-  "short_name": "WriteUp",
+  "short_name": "Write Up",
   "description": "A tool for generating legislative and committee write-ups.",
   "start_url": "WU_2026.html",
   "scope": "./",
