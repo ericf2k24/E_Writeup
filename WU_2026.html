@@ -2,14 +2,16 @@
 
 <style>
 html {
-    zoom: 2;
+    zoom: 1;
 }
-    
+
 body 
 {/*for space on top and left side*/
   margin-top: 0.5in;
   margin-left: 0.5in;
-}/*for space on top and left side*/  </style>
+}/*for space on top and left side*/  
+
+</style>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.75">
@@ -1304,6 +1306,11 @@ window.onload = function()
     cpnm10Funcaa00 = document.getElementById("name10").value; // copy name to use
     cpnm10Funcaa05 = document.getElementById("mywriteup").value; // copy writeup area content
     document.getElementById('hide01').value = document.getElementById("mywriteup").value; // copy writeup area content
+    // Copy the "name10" value directly to the clipboard
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(cpnm10Funcaa00);
+    }
+    // Copy the "name10" value directly to the clipboard
     if (cpnm10Funcaa05.indexOf("RNAME1")>-1)
       {
         cpnm10Funcaa05 = cpnm10Funcaa05.replace("RNAME1", cpnm10Funcaa00); // replace NAME
@@ -1320,6 +1327,11 @@ window.onload = function()
     cpnm10Funcca00 = document.getElementById("name30").value; // copy name to use
     cpnm10Funcca05 = document.getElementById("mywriteup").value; // copy writeup area content
     document.getElementById('hide01').value = document.getElementById("mywriteup").value; // copy writeup area content
+    // Copy the "name30" value directly to the clipboard
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(cpnm10Funcca00);
+    }
+    // Copy the "name30" value directly to the clipboard
     if (cpnm10Funcca05.indexOf("RNAME1")>-1)
       {
         cpnm10Funcca05 = cpnm10Funcca05.replace("RNAME1", cpnm10Funcca00); // replace NAME
@@ -1336,6 +1348,11 @@ window.onload = function()
     cpnm11Funcea00 = document.getElementById("name11").value; // copy name to use
     cpnm11Funcea05 = document.getElementById("mywriteup").value; // copy writeup area content
     document.getElementById('hide01').value = document.getElementById("mywriteup").value; // copy writeup area content
+    // Copy the "name11" value directly to the clipboard
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(cpnm11Funcea00);
+    }
+    // Copy the "name11" value directly to the clipboard
     if (cpnm11Funcea05.indexOf("RNAME1")>-1)
       {
         cpnm11Funcea05 = cpnm11Funcea05.replace("RNAME1", cpnm11Funcea00); // replace NAME
@@ -1352,6 +1369,11 @@ window.onload = function()
     cpnm21Funcga00 = document.getElementById("name31").value; // copy name to use
     cpnm21Funcga05 = document.getElementById("mywriteup").value; // copy writeup area content
     document.getElementById('hide01').value = document.getElementById("mywriteup").value; // copy writeup area content
+    // Copy the "name31" value directly to the clipboard
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(cpnm21Funcga00);
+    }
+    // Copy the "name11" value directly to the clipboard    
     if (cpnm21Funcga05.indexOf("RNAME1")>-1)
       {
         cpnm21Funcga05 = cpnm21Funcga05.replace("RNAME1", cpnm21Funcga00); // replace NAME
@@ -1429,6 +1451,7 @@ window.onload = function()
     document.getElementById("showbutton01").innerHTML = "Show";
     var wrttmp1511 = document.getElementById('mywriteup').value;
     var nmetmp1531 = document.getElementById("tmpnme1").value;
+    
     //var nmetmp1531 = document.getElementById("name12").value;
     var nmetmp1591 = "";
     var nmetmp1551 = nmetmp1531.replace("Representative ", "");
@@ -1442,6 +1465,13 @@ window.onload = function()
     var postmp1731 = wrttmp1511.indexOf(", and RName2"); // RName2
     // REPRESENTATIVE
     // if (nmetmp1531.indexOf("REPRESENTATIVE")>-1){ //20250204
+    
+    // Copy the "name31" value directly to the clipboard
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(nmetmp1531);
+    }
+    // Copy the "name11" value directly to the clipboard
+
     if (wrttmp1511.indexOf("REPRESENTATIVE") > -1)
       {
         wrttmp1511 = wrttmp1511.replace("REPRESENTATIVE RName2", nmetmp1531);
